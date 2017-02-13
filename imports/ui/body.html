@@ -1,0 +1,51 @@
+<body>
+  <div class="container" id="reader">
+    <header>
+      <img src="http://twt-thumbs.washtimes.com/media/image/2016/03/16/Clinton_Emails.JPEG-0d1f0_c0-129-3010-1883_s885x516.jpg?e44e611e3b1e0cc5c25f11687c610d8c354197a2" align="middle"/>
+    </header>
+
+    <p><form class="emailId">
+      <input type="text" name="id" placeholder="Email ID: {{id}}">
+    </form></p>
+    <p><button class="prev">Prev</button>
+    <button class="next">Next</button>
+    <button class="random">Random</button></p>
+ 
+    <ul>
+      {{#each emails}}
+	{{> email}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="container" id="search">
+    <form class="searchInput">
+        <input type="text" name="search" placeholder="Search: {{searchQuery}}">
+    </form>
+    <ul>
+      {{#each searchResults}}
+        {{> searchResult}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+
+ 
+
+
+<template name="email">
+  <li>
+    <p>Subject: {{MetadataSubject}}</p>
+    <p class="from" style="color: blue"><u>From: {{MetadataFrom}}</u></p>
+    <p class="to" style="color: blue"><u>To: {{MetadataTo}}</u></p>
+    <p><pre>{{RawText}}</pre></p>
+ </li>
+</template>
+
+<template name="searchResult">
+  <li class="result">
+    <p>ID: {{Id}}</p>
+    <p>Subject: {{MetadataSubject}}</p>
+    <p class="to">From: {{MetadataFrom}}</p>
+    <p class="from">To: {{MetadataTo}}</p>
+  </li>  
+</template>

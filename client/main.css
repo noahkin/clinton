@@ -1,0 +1,105 @@
+body {
+  font-family: sans-serif;
+  background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto;
+  background: #whitee;
+}
+
+#search {
+  float: right;
+  position: relative;
+  width: 30%;
+  min-width: 30%;
+  max-width: 30%;
+}
+
+#search ul li p {
+  text-align: right;
+  line-height: 75%;
+}
+
+#reader {
+  float: left;
+  position: absolute;
+  max-width: 65%;
+  min-width: 65%;
+  width: 65%;
+}
+
+#search input {
+  padding: 5px;
+}
+
+button {
+  display: inline-block;
+}
+
+header {
+  background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+form {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+  border-left: #eee solid 1px;
+}
+
+pre {
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.search {
+  width: 150px;
+  clear: both;
+}
+
+#search form input {
+  padding: 1px
+}
+}
+
